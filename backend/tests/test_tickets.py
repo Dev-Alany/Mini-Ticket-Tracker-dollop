@@ -5,6 +5,7 @@ Set TEST_DATABASE_URL in your env or .env.test before running.
     pytest tests/
 """
 import os
+# pyrefly: ignore [missing-import]
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
