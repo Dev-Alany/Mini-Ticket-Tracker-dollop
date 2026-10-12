@@ -14,7 +14,7 @@ export function StatsBar({ stats, loading }) {
         </span>
       </div>
       <div className="stat-card">
-        <span className="stat-label">Close</span>
+        <span className="stat-label">Closed</span>
         <span className="stat-value closed">
           {loading ? "—" : stats?.closed ?? 0}
         </span>
