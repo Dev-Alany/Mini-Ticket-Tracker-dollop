@@ -12,6 +12,7 @@ def create_ticket(db: Session, payload: schemas.TicketCreate) -> models.Ticket:
     return ticket
 
 
+
 def list_tickets(
     db: Session,
     status: Optional[models.StatusEnum],

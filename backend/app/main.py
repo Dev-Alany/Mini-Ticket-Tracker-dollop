@@ -4,6 +4,7 @@ from .database import engine, Base
 from .routers import tickets
 
 # Create tables on startup (dev convenience — use Alembic in production)
+
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Mini Ticket Tracker", version="1.0.0")
